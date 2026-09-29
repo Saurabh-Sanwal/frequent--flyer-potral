@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; }
+
+body {
+  font-family: var(--font);
+  background: var(--gray-50);
+  color: var(--gray-900);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 { font-size: 1.75rem; letter-spacing: -0.02em; }
+h2 { font-size: 1.25rem; margin-bottom: var(--space-1); }
+h3 { font-size: 1.05rem; }
+
+:focus-visible { outline: 3px solid var(--gray-900); outline-offset: 2px; }
+
+.muted { color: var(--gray-600); font-size: 0.9rem; }
+
+.skip-link {
+  position: absolute;
+  left: var(--space-1);
+  top: -100px;
+  background: var(--gray-900);
+  color: var(--white);
+  padding: var(--space-1);
+  border-radius: var(--radius);
+  z-index: 10;
+}
+.skip-link:focus { top: var(--space-1); outline-color: var(--white); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
