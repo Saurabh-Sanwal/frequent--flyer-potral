@@ -1,5 +1,5 @@
 // Change this to your deployed backend URL (ending in /api) before deploying.
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://frequent-flyer-potral.onrender.com/api';
 const TIMEOUT_MS = 15000;
 
 async function request(path, options = {}) {
